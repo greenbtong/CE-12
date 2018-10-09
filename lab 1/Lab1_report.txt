@@ -1,0 +1,27 @@
+Brian Tong
+1315598
+btong1@ucsc.edu
+1/18/2017
+
+CMPE 12: Lab Section 01C: MoWe 1:00 - 3:00PM -TA: Mike - Tutor: Sasha
+
+Lab 1: Intro to Logic with Multimedia Logic
+
+Purpose:
+The objective of this lab was to familiarize oneself with the Multimedia Logic application (MML) and truth logic tables. 
+
+Procedure:
+Part A: Warm up
+The lab began by familiarizing oneself with MML by completing the built-in tutorial. The tutorial has clear and straight forward instructions, asking the user to create a switch that will turn on a LED light. 
+
+Part B: Playing with Numbers 
+Next, the user must create a schematic with 4 switches connected to their own LED light. The 4 switches are also all connected to a LED number displayer. Numbering from bottom to top, I determined that switch 1 outputs 1, switch 2 outputs 2, switch 3 outputs 4, and switch 4 outputs 8. 
+
+Part C: Truth Table to Gates
+Here, the user will convert a truth table to gates. The table has three different switches. Assuming 0 means off and 1 means on, the possible outputs that will turn on a LED light will be  
+			Output: 1 = (0,0,0) + (0,0,1) + (0,1,1) + (1,1,0)
+
+So since “+” represents an AND gate, the values in the equation above are connected to 4 different AND gates and an OR gate for this schematic to follow the truth table.
+
+Part D: Guessing Game
+The objective of this part is to get familiar with the random number generator (RNG) and applying logic to get a certain result. Only two outputs of the RNG will be used. The RNG outputs a random value of 0 or 1 for two different outputs and the user must match those values with their own two outputs. If it is correct, the LED light will turn on. So to determine if the user is correct, I used 2 XNOR gates and a AND gate. 

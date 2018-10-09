@@ -1,0 +1,55 @@
+Brian Tong
+1315598
+btong1@ucsc.edu
+3/13/2017
+
+CMPE 12: Lab Section 01C: MoWe 1:00 - 3:00PM -TA: Mike - Tutor: Sasha
+
+Lab 5: Introduction to Uno32 and MIPS
+
+Purpose:
+The objective of this lab is to get familiar with MIPS assembly that will light LED’s based off button pressed and a bouncing LED’s back and forth.  
+
+Procedure:
+
+Part A)
+1)	First, the mapping between the LED’s and the Pic32 pins were determine. They're 
+as followed: 
+	slide swithces 
+	1/RD8/2
+	2/RD9/7
+	3/RD10/8
+	4/RD11/35
+       
+	push button
+	1/RF1/4   
+	2/RD5/34
+	3/RD6/36
+	4/RD7/37
+	
+	LED (portE) 8 bit
+	0/RE0/33
+	1/RE1/32
+	2/RE2/31
+	3/RE3/30
+	4/RE4/29
+	5/RE5/28
+	6/RE6/27
+	7/RE7/26
+
+2)	Next, a program was written to continuously loop to do the following: 
+	a) read the value of the 4 switches which corresponds to the LD1-LD3. If on, the LED’s will be on.
+	b) read the state of the 4 buttons which corresponds to the LD4-LD8. If the buttons are held down, the LED’s will be on.
+
+Part 2)
+1)	With a better understanding of the LED’s, a code will be written to make the LED’s bounce back and forth. First, a delay function is created that will read in the switches to determine if the delay will be longer. The delay function is used to determine how long a LED light will stay on. 
+
+2)	Next, a LED on/off function was created to turn on the appropriate LED light.
+
+3)	There must be an indicator to determine if the LED’s will be moving from 1-8 or 8-1. A code is written for that.
+
+3)	The prompt then asks the user for a number between 1 and 25 to shift the char that many values. The input is stored 
+
+Results/Analysis:
+The first part took me awhile. I had to learn all the syntax and commands for MIPS assembly. For some reason, I had an issue visualizing how the LED’s worked and how I would call turn them on. With the help of the TA, I was able to figure it out and it turned out to be fairly easy. The second part was not too difficult. After understanding part 1, it became extremely clear how I would write my code for part 2. The biggest issue in part 2 was determining how long I wanted to delay my LED’s. Overall, I learned a lot and I believe this assignment will help me in embedded systems. 
+

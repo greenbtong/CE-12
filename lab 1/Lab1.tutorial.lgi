@@ -1,0 +1,26 @@
+41 2 0
+38 1
+8 46 159 95 110 1 0
+7 163 159 212 110 2 1
+22 79 84 191 64 0 \NUL
+turns on the LED
+22 14 55 123 35 0 \NUL
+Part A: Warm up
+22 15 31 586 11 0 \NUL
+Brian Tong - btong1@ucsc.edu - 1315598- Section 01C MW 1-3 - TA: Mike - Tutor: Sasha
+1 92 134 164 134
+39 16777215
+47 0
+40 1 6 6
+50 800 600
+51 0 100
+30
+System
+16
+700
+0
+0
+1
+2
+2
+34

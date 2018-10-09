@@ -1,0 +1,22 @@
+Brian Tong
+1315598
+btong1@ucsc.edu
+2/10/2017
+
+CMPE 12: Lab Section 01C: MoWe 1:00 - 3:00PM -TA: Mike - Tutor: Sasha
+
+Lab 3: Decimal Converter
+
+Purpose:
+The objective of this lab is to develop good programming practices. By using a flowchart and having a clear plan for your program, programs can be created with ease and clarity. This will be done on a decimal converter.
+
+Procedure
+Part 1:
+An example flowchart was examined and analyzed. Once understood, the programmer will have to create their own flowchart for their decimal converter.
+
+Part 2:
+Write out the code that follows the flowchart created in part 1. The code must print out a greeting, ask for a decimal number followed by a carriage return, consider negative numbers, convert the string of digits into a two’s complement number, print the number out in binary, and repeat until the user wants to quit.
+
+Results/Analysis:
+First, I created a flowchart to organized my ideas. The flowchart made it clear to me how I wanted to set up my assembly code and where to place my condition commands. First, my code greets the user. Next, the user will input a value. The code will read the value char by char. The program will determine if the first char is a negative sign, “enter”, a digit, or “X”. If the input is negative this will be noted and the input will become negative later in the code. If the input is “X” the code ends. This will continue until the entire value the user inputted is read. An issue I encountered here was that assembly does not allow the programmer to subtract or add with a number larger than 16, so to solve this problem I loaded a variable with my intended value and subtracted the char with this variable. Because assembly read the input as a string, I wrote code to converts the string to an int. Next, the program converts the sum into a negative, and if the input is not negative the program continues. Now, the program uses a MASK for loop to convert the decimal into a 16-bit binary and is printed out. A pointer and a counter are initialized and used here. Once done, the code repeats and asks the user for another value. The code does not end until the user inputs “X”.
+

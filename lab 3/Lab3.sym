@@ -1,0 +1,24 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ANSWER                  3098
+//	END                     304B
+//	FOR                     3024
+//	GREETING                304E
+//	INPUT                   3007
+//	INVERSE                 302B
+//	LOOP                    3002
+//	MASK                    30D3
+//	MASKCONT                303C
+//	MASKLOOP                3035
+//	NEG                     3029
+//	NEGATIVE                30D2
+//	NEXT                    302E
+//	NUMBERS                 30D1
+//	ONE                     30CF
+//	OUTONE                  3047
+//	OUTZERO                 3043
+//	OVER                    30B6
+//	QUESTION                3071
+//	READ                    3030
+//	X                       30D0
+//	ZERO                    30CE

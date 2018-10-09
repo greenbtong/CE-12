@@ -1,0 +1,28 @@
+Brian Tong
+1315598
+btong1@ucsc.edu
+1/26/2017
+
+CMPE 12: Lab Section 01C: MoWe 1:00 - 3:00PM -TA: Mike - Tutor: Sasha
+
+Lab 2: Adding and Subtracting 
+
+Purpose:
+The objective of this lab is to become familiar with the concept of sequential logic circuits. To achieve this object, I use both sequential and combinational logic to sum or subtract a sequence of numbers.
+
+Procedure:
+Part A: Register
+I created a 6-bits wide register using 6 D Flip-Flops for storage. The 6 Flip-Flops’ clocks are connected to one momentary switch and their CLR lines is connected to a switch set I called clear. The clock and clear are connect through a signal sender.  A 7 segment LEDs is included on this page to determine if there are any bugs in the register.
+
+Part B: Input
+Input a keypad that will be used to add to the register value. The keypad is connected to flip-flops so that the values stay after the keys are pressed. 
+
+Part C: Addition
+A 1-bit fuller adder is made to add and copied 5 more times making a 6-bit full adder. The “a” input is from the keypad and the “b” input is from the stored value. LED are attached to each 1 bit fuller adder to determine if there are any bugs. 
+
+Part D: Subtraction
+Using a 2-to-1 mux, the user can determine to inverse the value to subtract from the register value. A switch determines the 2-to-1 mux options, 1 for addition 0 for subtraction. The users value will then be sent to the 6-bit full adder to compute a solution. 
+
+Results/Analysis:
+One issues I encountered was leaving the clear/reset button at 1, so the register would not be set to 0 initially. My sum would not be correct. To debug my circuit, I would put 7 segment LEDS and LEDS to determine if the correct values are getting passed around and evaluated correctly. When I subtracted a larger number from a smaller number the result would not make sense because my 7 segment display only contains 6 bits. The same thing would be true for adding numbers that would exceed 6 bits. To sum it up, the values that will be displayed by the 7 segment LEDs display will be from 0 – 63. For example, if the value is 74 the value will be 75-64 = 11 (64 because of 0 so its 63+1) and the same thing will be true for subtraction but the minus sign will be switched. 
+

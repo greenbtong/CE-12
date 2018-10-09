@@ -1,0 +1,24 @@
+Brian Tong
+1315598
+btong1@ucsc.edu
+2/26/2017
+
+CMPE 12: Lab Section 01C: MoWe 1:00 - 3:00PM -TA: Mike - Tutor: Sasha
+
+Lab 4: Caesar Cipher
+
+Purpose:
+The objective of this lab is to utilize sub routines to create a Caesar Cipher.
+
+Procedure:
+1)	First a 2D array is created. The array is row-major so it has 2 rows and 200 columns. 
+2)	Next, the prompt asks the user to pick between three options: encrypted, decrypted or exit. The input is stored.
+3)	The prompt then asks the user for a number between 1 and 25 to shift the char that many values. The input is stored
+4)	The prompt then asks the user for a string of characters that can go up to a maximum of 200 characters. The input is stored into the array.
+5)	Depending on the answer in step 2), the string in step 4) is encrypted or decrypted by the shift value in 3). The upper and lower case letters will stay their initial form. Any char that is not a letter will not be altered. 
+6)	The initial and new string are printed out. This gets repeated until the user exits in step 2).
+
+Results/Analysis:
+The main routines were easy to complete due to the similarities in Lab 3. I did have some issues with the sub routines. One of my issue was overwriting R7 without saving the address. The sub routines would not return to its correct location and ruin the entire program. Another issue I had was getting the correct equation to properly correct the char if it goes pass z or a in both the upper and lower case form. It took me awhile and a lot of messing around to get the correct equation. I also met an error loading a large variable. I would get an error saying that the variable cannot be represented in a 9-bit signed PC offset, so the location of declaring a large variable is important. Overall, this lab was stressful and time consuming but I did learn a lot.  
+
+
